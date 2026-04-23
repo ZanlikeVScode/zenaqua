@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Alex Rivera, Product Designer & Web Developer">
+    <title>Alex Rivera - Personal Portfolio</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Preconnect untuk performa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- ============================================
+         HEADER & NAVBAR
+         ============================ b================ -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#"><strong>Fauzan</strong> Hanief</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a href="#contact" class="btn-talk">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         PROFILE CARD SECTION (Hero Utama)
+         ============================================ -->
+    <section class="profile-card-section">
+        <div class="container">
+            <article class="profile-card">
+
+                <!-- Header: Role & Status -->
+                <header class="profile-header">
+                    Quality Assurance Engineer
+                    </span>
+                    <span class="available-badge">
+                        <span class="pulse-dot"></span>
+                        AVAILABLE FOR WORK
+                    </span>
+                </header>
+
+                <!-- Content: Foto & Info -->
+                <div class="profile-content">
+                    <div class="profile-image-wrapper">
+                        <img src="Images/Foto Profil.jpeg" alt="Foto Profil Alex Rivera" class="profile-image"
+                            loading="lazy">
+                        <div class="image-ring" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="profile-info">
+                        <h1 class="profile-name">I'm Fauzan</h1>
+                        <p class="profile-description">
+                            Quality Assurance Engineer from Surabaya, ID.<br>
+                            Currently learning SQC and automated testing.
+                        </p>
+
+                        <div class="profile-actions">
+                            <a href="#contact" class="btn-action primary">
+                                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                                Hire Me
+                            </a>
+                            <button type="button" class="btn-action secondary" onclick="copyEmail()"
+                                aria-label="Salin alamat email">
+                                <i class="fas fa-copy" aria-hidden="true"></i>
+                                Copy Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EDUCATION SECTION
+         ============================================ -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Latar Belakang Pendidikan</h2>
+
+            <div class="timeline" aria-label="Riwayat pendidikan">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <h3>Institut Teknologi Sepuluh Nopember</h3>
+                        <time class="timeline-date" datetime="2024">2024 - Sekarang</time>
+                        <p>D4 Business Statistics</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <h3>SMAN 1 Lemahabang</h3>
+                        <time class="timeline-date" datetime="2021/2024">2021 - 2024</time>
+                        <p>Jurusan IPA - Fokus pada Matematika dan Ilmu Komputer</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <h3>SMP Negeri 2 Lemahabang</h3>
+                        <time class="timeline-date" datetime="2018/2021">2018 - 2021</time>
+                        <p>Lulus dengan predikat Sangat Baik</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         INTERESTS & HOBBIES SECTION
+         ============================================ -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">Minat & Hobi</h2>
+
+            <div class="interests-grid">
+
+                <article class="interest-card">
+                    <div class="interest-image">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=300&fit=crop"
+                            alt="Fotografi alam dan satwa" loading="lazy">
+                    </div>
+                    <div class="interest-content">
+                        <i class="fas fa-camera" aria-hidden="true"></i>
+                        <h3>Fotografi</h3>
+                        <p>Memotret satwa dan lanskap alam. Menangkap momen indah dalam setiap bidikan kamera.</p>
+                    </div>
+                </article>
+
+                <article class="interest-card">
+                    <div class="interest-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop"
+                            alt="Coding dan development" loading="lazy">
+                    </div>
+                    <div class="interest-content">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                        <h3>Web Development</h3>
+                        <p>Mengutak-atik kode HTML, CSS, dan JavaScript untuk membuat website yang menarik.</p>
+                    </div>
+                </article>
+
+                <article class="interest-card">
+                    <div class="interest-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop"
+                            alt="Problem solving programming" loading="lazy">
+                    </div>
+                    <div class="interest-content">
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                        <h3>Problem Solving</h3>
+                        <p>Menyelesaikan masalah programming dan membuat algoritma yang efisien.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PORTFOLIO & PROJECTS SECTION
+         ============================================ -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Proyek & Karya</h2>
+
+            <div class="portfolio-grid">
+
+                <article class="portfolio-card">
+                    <div class="portfolio-icon" aria-hidden="true">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3>Quality Control System - VBA Excel</h3>
+                    <p>Program sederhana menggunakan VBA Excel untuk mencatat dan mengelola data quality control di
+                        produksi.</p>
+                    <div class="portfolio-tags" aria-label="Teknologi yang digunakan">
+                        <span>VBA</span>
+                        <span>Excel</span>
+                        <span>Automation</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="portfolio-icon" aria-hidden="true">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Website portofolio pribadi dengan desain modern dan responsif menggunakan HTML, CSS, dan
+                        JavaScript.</p>
+                    <div class="portfolio-tags" aria-label="Teknologi yang digunakan">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="portfolio-icon" aria-hidden="true">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Aplikasi To-Do List</h3>
+                    <p>Aplikasi manajemen tugas sederhana dengan fitur CRUD dan local storage.</p>
+                    <div class="portfolio-tags" aria-label="Teknologi yang digunakan">
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Target Masa Depan -->
+            <aside class="target-section">
+                <h3 class="target-title">Target Masa Depan</h3>
+                <div class="target-card">
+                    <i class="fas fa-bullseye" aria-hidden="true"></i>
+                    <div class="target-content">
+                        <h4>Magang di Bidang Product Quality Assurance</h4>
+                        <p>Bercita-cita untuk mendapatkan pengalaman magang di perusahaan manufaktur, khususnya di
+                            divisi Quality Assurance untuk mengembangkan skill dalam pengawasan kualitas produk.</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+
+            <div class="contact-content">
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:alex.rivera@email.com">alex.rivera@email.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Surabaya, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="social-links" aria-label="Media sosial">
+                    <a href="https://instagram.com/zan.likemath" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://linkedin.com/in/fauzanhanief" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/zanlikevscode" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a>
+                </nav>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="Images/Pi7_TROPICA+_1_-removebg-preview.png" alt="Logo" class="footer-img-logo">
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>SITEMAP</h4>
+                    <ul>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/fauzanhanief" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/zanlikevscode" target="_blank">GitHub</a></li>
+                        <li><a href="https://instagram.com/zan.likemath" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fauzan Hanief. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

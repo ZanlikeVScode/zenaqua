@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Personal Portfolio</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- BAGIAN KIRI: Gambar & Overlay (60%) -->
+        <div class="left-panel">
+            <img src="https://cdn.shopify.com/s/files/1/0230/7266/9773/files/A200_Samolus_1_month_mark.jpg?v=1682228487" alt="Creative Design">
+            
+            <!-- Overlay Text di Bawah -->
+            <div class="overlay-content">
+                <h2>Zan.LikeAquascape</h2>
+                <p class="slogan">Design is intelligence made visible</p>
+                <p class="description">
+                    UI/UX Designer & Creative Developer<br>
+                    Crafting digital experiences that inspire.
+                </p>
+            </div>
+        </div>
+        
+        <!-- BAGIAN KANAN: Form Login (40%) -->
+        <div class="right-panel">
+            <div class="form-wrapper">
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Log in to manage your portfolio, track projects, and update your personal brand.</p>
+
+                <form action="index.html" method="POST">
+                    <!-- Input Email -->
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@designstudio.com" required>
+                    </div>
+
+                    <!-- Input Password -->
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <!-- Tombol Sign In -->
+                    <button type="submit" class="btn-login" href="index.html">Sign In</button>
+                </form>
+
+                <!-- Divider "OR CONTINUE WITH" -->
+                <div class="divider">
+                    <span>or continue with</span>
+                </div>
+
+                <!-- Social Login Buttons -->
+                <div class="social-buttons">
+                    <button class="btn-social google">
+                        <span class="icon">G</span> Google
+                    </button>
+                    <button class="btn-social github">
+                        <span class="icon">⌨</span> GitHub
+                    </button>
+                </div>
+
+                <!-- Link Register -->
+                <p class="register-link">
+                    New here? <a href="register.html">Create Your Portfolio</a>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
